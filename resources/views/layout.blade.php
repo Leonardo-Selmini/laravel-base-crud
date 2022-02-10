@@ -7,6 +7,6 @@
   <title>Comics</title>
 </head>
 <body>
-  @dd($comics)
+  @yield('body')
 </body>
 </html>  
