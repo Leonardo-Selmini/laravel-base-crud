@@ -8,5 +8,6 @@
 </head>
 <body>
   @yield('body')
+  <script src="{{ asset('js/deleteValidation.js') }}"></script>
 </body>
 </html>  

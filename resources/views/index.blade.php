@@ -30,7 +30,7 @@
           <td><a href="{{route("comics.show", $comic["id"])}}"><button>View</button></a></td>
           <td><a href="{{route("comics.edit", $comic["id"])}}"><button>Edit</button></a></td>
           <td>
-            <form action="{{route("comics.destroy", $comic -> id)}}" method="post">
+            <form action="{{route("comics.destroy", $comic -> id)}}" method="post" onsubmit="confirmDelete()">
               @csrf
               @method("delete")
               <button type="submit">Delete</button>
