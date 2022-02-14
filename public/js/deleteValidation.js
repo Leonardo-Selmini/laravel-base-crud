@@ -1,3 +1,5 @@
-function confirmDelete(){
-  confirm("Delete comic?");
+function confirmDelete(event){
+  if(!(confirm("Delete comic?"))){
+    event.preventDefault();
+  }
 }
